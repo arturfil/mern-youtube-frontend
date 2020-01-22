@@ -26,10 +26,10 @@ const Home = () => {
     <div>
       <Navbar/>
       <div className="container">
-      <div className="row m-10">
+      <div className="row">
         {videogames.map((videogame, i) => (
-          <div key={i} className="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
-            <Card className="m-10" videogame={videogame} />
+          <div key={i} className="col-lg-4 col-md-6 col-sm-6 col-sm-6">
+            <Card className="" videogame={videogame} />
           </div>
         ))}
       </div>
