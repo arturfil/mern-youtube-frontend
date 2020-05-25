@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 import {getVideogames} from './apiCore';
 import Card from './Card';
 
@@ -24,7 +24,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar/>
+      <Navigation/>
       <div className="container">
       <div className="row">
         {videogames.map((videogame, i) => (

@@ -1,0 +1,19 @@
+.sign-box {
+  width: 300px;
+  height: 400px;
+  border: solid rgb(236, 235, 235) 1px;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,.11), 0 5px 15px 0 rgba(0,0,0,.08);
+  padding: 50px 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.btn-primary {
+  text-align: center!important;
+  margin: 0 auto!important;
+}
+
+.s-btn {
+  text-align: center!important;
+  margin: 0 auto;
+}
