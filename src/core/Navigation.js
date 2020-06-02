@@ -50,7 +50,7 @@ const Navigation = ({history}) => {
                   </NavItem>
                   <NavItem className="nav-link">
                     <Link className="nav-link" to="/signin">
-                      Singin
+                      Login
                     </Link>
                   </NavItem>
                 </>
@@ -62,6 +62,7 @@ const Navigation = ({history}) => {
                   </NavItem>
                   <NavItem className="nav-link">
                     <Link
+                      to="/"
                       onClick={() =>
                         signout(() => {
                           history.push("/");
