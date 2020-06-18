@@ -80,3 +80,50 @@ export const isAuthenticated = () => {
   }
     return false;
 }
+//  add this to route later
+export const createCategory = (userId, token, category) => {
+  return fetch(`${API}/category/create/${userId}`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify(category)
+  })
+    .then(response => {
+      return response.json()
+    })
+    .catch(err => {
+      console.log(err)
+    })
+}
+
+export const getCategories = () => {
+  return fetch(`${API}/category/categories`, {
+    method: 'GET'
+  })
+    .then(response => {
+      return response.json()
+    })
+    .catch(err => {
+      console.log(err)
+    })
+}
+// ${userId}
+export const createVideogame = (userId, token, videogame) => {
+  return fetch(`${API}/videogame/create/`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      Authorization: `Bearer ${token}`
+    },
+    body: videogame
+  })
+    .then(response => {
+      return response.json()
+    })
+    .catch(err => {
+      console.log(err)
+    })
+}

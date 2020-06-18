@@ -61,6 +61,12 @@ const Navigation = ({history}) => {
                     <Link to="/" className="nav-link">Profile</Link>
                   </NavItem>
                   <NavItem className="nav-link">
+                    <Link to="/addcategory" className="nav-link">Add Category</Link>
+                  </NavItem>
+                  <NavItem className="nav-link">
+                    <Link to="/addvideogame" className="nav-link">Add Videogame</Link>
+                  </NavItem>
+                  <NavItem className="nav-link">
                     <Link
                       to="/"
                       onClick={() =>
