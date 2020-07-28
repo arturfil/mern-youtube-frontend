@@ -58,9 +58,6 @@ const Navigation = ({history}) => {
               { isAuthenticated() && (
                 <>
                   <NavItem className="nav-link">
-                    <Link to="/" className="nav-link">Profile</Link>
-                  </NavItem>
-                  <NavItem className="nav-link">
                     <Link to="/addcategory" className="nav-link">Add Category</Link>
                   </NavItem>
                   <NavItem className="nav-link">
