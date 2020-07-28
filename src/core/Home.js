@@ -29,7 +29,7 @@ const Home = () => {
       <div className="row">
         {videogames.map((videogame, i) => (
           <div key={i} className="col-lg-4 col-md-6 col-sm-6 col-sm-6">
-            <Card className="" videogame={videogame} />
+            <Card videogame={videogame} />
           </div>
         ))}
       </div>
